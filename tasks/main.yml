@@ -1,0 +1,30 @@
+---
+# tasks file for jekyll
+
+- name: update system
+  package:
+    name: *
+    state: latest
+
+- name: install packages
+  package:
+    name: "{{item}}"
+    state: latest
+  with_items:
+    - ruby-devel
+    - redhat-rpm-config
+
+- name: install gems
+  gem:
+    name: "{{item}}"
+    state: latest
+  with_items:
+    - jekyll
+    - bundler
+    - json
+
+- name: open firewall port for local development
+  firewalld:
+    port: "{{jekyll_development_port}}"
+    permanent: true
+    state: enabled
