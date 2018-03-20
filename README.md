@@ -34,4 +34,4 @@ GPLv3
 Author Information
 ------------------
 
-This role was created by Influential Code LLC (https://www.influentialcode.com).
+Influential Code LLC (https://www.influentialcode.com)
