@@ -32,19 +32,19 @@ galaxy_info:
   #
   # platforms is a list of platforms, and each platform has a name and a list of versions.
   #
-  # platforms:
-   - name: Fedora
-     versions:
-       - all
-   - name: RHEL
-     versions:
-       - 7
-   - name: CentOS
-     versions:
-       - 7
-  galaxy_tags:
-    - jekyll
-    - fedora
+  platforms:
+    - name: Fedora
+      versions:
+        - all
+    - name: RHEL
+      versions:
+        - 7
+    - name: CentOS
+      versions:
+        - 7
+   galaxy_tags:
+     - jekyll
+     - fedora
 
 dependencies: []
   # List your role dependencies here, one per line. Be sure to remove the '[]' above,

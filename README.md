@@ -12,6 +12,7 @@ None
 Role Variables
 --------------
 `defaults/main.yml`
+
 jekyll_development_port: port to use when port forwarding
 
 Dependencies
